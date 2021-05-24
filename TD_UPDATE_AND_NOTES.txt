@@ -1,0 +1,154 @@
+
+                                      TD MODULE   (by Deepee)
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+May - 6/14/20
+---------------------
+- A lot of things
+
+
+6/15/20
+---------------------
+- Added tower, enemy, and bullet data structs
+- Added respective functions to module to create towers and enemies based on data structs
+- Added function for towers to attack based on the bullet blueprint they have
+- Added two additional resources
+- Slightly tweaked the UI for later updates
+- Added two additional enemy types
+
+6/16/20
+---------------------
+- Implemented tower cost to tower data struct
+- Added function for checking resource costs of a tower
+- Modified build action to look up a given tower name to build
+- Tweaked enemy to give wood and crystal resources too
+- Added lookup tower name and enemy name to module class (along w/ modifiers)
+- Moved sprite management for enemies to enemies themselves
+- Added direction animations to enemies
+- Implemented armor and armor types into enemies, as well as damage types into towers (still need to decide on what armor and damage types there will be)
+- Added respective armor reduction scale and type scale for future use (again, whenever types are decided)
+- Tweaked build over to consider more of if a tower is phase-able or not (and might add equipables, but this is still intended to be a demo for now)
+- Added wave map to td_table file
+
+
+6/17/20
+---------------------
+- Added wave data to table and wave loading functionality to module
+- Added regeneration to enemies
+- Fixed enemy sprite appearing in corner (was a result of enemies to spawn being rendered)
+- Fixed waves spawning only 10 enemies
+
+6/18/20
+---------------------
+- Added additional tower build buttons for multiple towers and tower sets later (and respective tweaks to the module and current added procedures)
+- Fixed towers not reading all enemies
+- Added build icon links to towers
+- Added build data names to respective buttons
+
+6/19/20
+---------------------
+- Tweaked bullet data to link to other bullet data already
+*the previous implementations ideas earlier were retarded btw
+- Added more bullet considerations (still have to tweak towers and test first)
+
+
+6/25/20
+---------------------
+- Fixed wonky detection with hitbox bullets
+
+6/26/20
+---------------------
+- Added a bullet space class to extend and share bullet managing functionalities
+- Chain bullets now added (so can do multi-targets, splash, thief towers, etc.)
+- Added enemy debuffs & tower buffs/auras (still need to implement)
+
+6/28/20
+---------------------
+- Tweaked enemy reaching point to consider if previous point was in range of velocity (for more reliable movement, especially at faster speeds)
+- Added functionality to bullets, bullet space, and enemies concerning debuffs
+- Added debuff loading to level loader class
+- Now debuffs are available (***will extend functionality in the future though, probably with an additional data set to store default stats & modifiers)
+
+6/29/20
+---------------------
+- Added hitboxes to buff auras
+- Added functionality to towers to account for other towers' auras (as well as updating buffs)
+- Fixed the problem with the game crashing in enemy's debuff update
+- Added recursive attack modifier to bullets to make buffing attack easier
+- Now buff auras are implemented
+
+6/30/20
+---------------------
+- Debuffs actually fixed (so shouldn't crash upon one being removed)
+- Added start of tower race feature to module
+
+7/1/20
+---------------------
+- Added tower race feature to table data and race loading features to module
+- Added tower name display for displaying towers
+
+7/2/20
+---------------------
+- Moved image loading to functions separate from main to make things less cluttered
+- Tweaks made to resource and tower display (and more to be done about the UI soon)
+- Added resource icons
+- Added UI background
+
+7/3/20
+---------------------
+- Added start of description display
+- Added tower description data to towers
+- Made start level button smaller
+- Added tower display when building a tower
+
+7/4/20
+---------------------
+- Added upgrade function to module and towers
+- Upgrade button added (as well as additional images to show if a
+- Added resource display for selling, buying, and upgrading towers
+
+8/3/20
+---------------------
+- Added word wrap to the tower descriptions
+
+8/5/20
+---------------------
+- Added speed multiplier to module
+- Added title screen
+- Fixed room changer (so now can go from title screen to game)
+- Added controls to change the map (in title screen)
+- Added HP bars to enemies
+- Added speed multiplier toggle (rest of the buttons are going to be functional prototypes for now)
+
+8/6/20
+---------------------
+- Start of second set of towers created
+
+8/7/20
+---------------------
+- Homing bullets now change their image direction to their target
+- Set 2 of towers implemented
+- Armor tweaked to showcase more of armor reduction w/ little going on right now
+
+8/8/20
+---------------------
+- Uneven tower ranges fixed
+- Added boundary checker in case any enemy flies out of the map (and will die doing so)
+
+TO DO LATER:
+
+(Enemy)
+
+(Tower)
+
+(Module)
+
+(UI & general) ***SAVE THIS FOR AFTER THE WORK BREAK
+
+(Framework)
+- Sound fx
+
+**except this one
+- Change to isometric drawing (HAVE TO IMPROVE LAYERING FOR THIS, AS WELL AS BRUSH UP ON TRANSFORMATIONS)
+

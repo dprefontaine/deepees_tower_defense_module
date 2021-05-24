@@ -1,0 +1,6 @@
+#ifndef PATH_NODE_H_INCLUDED
+#define PATH_NODE_H_INCLUDED
+
+
+
+#endif // PATH_NODE_H_INCLUDED

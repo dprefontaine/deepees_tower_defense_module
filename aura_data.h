@@ -1,0 +1,8 @@
+#ifndef AURA_DATA_H_INCLUDED
+#define AURA_DATA_H_INCLUDED
+
+enum AURA_TYPE{
+
+};
+
+#endif // AURA_DATA_H_INCLUDED
